@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Posalji.eu - Besplatno slanje SMS poruka</title>
+	<link rel="stylesheet" href="css/stil.css" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<meta charset="utf-8" />
+	<meta name="author" content="Ivan Antukić">
+	<meta name="keywords" content="slanje sms, sms poruke, besplatne sms poruke, brezplačni sms, sms provider, bulk sms, besplatni sms, bosna i hercegovina sms, bosna sms, web sms, telefon, mobitel, internet, sms croatia, sms hrvatska, tele2, vip, bonbon, t-mobile, tomato, simpa">
+	<meta name="description" content="Šaljite besplatne SMS poruke diljem Hrvatske. Poruke se šalju putem interneta na sve mobilne mreže u Hrvatskoj.">
+	<meta property="og:title" content="Posalji.eu - Besplatno slanje SMS poruka">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://www.posalji.eu">
+	<meta property="fb:admins" content="Mario"/>
+	<meta property="og:site_name" content="Posalji.eu">
+	<meta property="og:description" content="Šaljite besplatne SMS poruke diljem Hrvatske. Poruke se šalju putem interneta na sve mobilne mreže u Hrvatskoj.">
+	<!--JS-->
+	<script src="../../ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/jquery.localScroll.min.js"></script>
+	<script src="js/jquery.scrollTo.min.js"></script>
+</head>
+<body>
+<header>
+	<div id="header-inner">
+		<div id="logo">
+			<img src="img/logo.png"  />
+	    </div>
+	    <p id="header-inner-welcome">
+	    	Dobrodošli na Posalji.eu ! Ovdje možete besplatno slati SMS poruke.
+	    </p>
+		<a href="#section-posalji-poruku" id="posalji-sms-button">Pošalji besplatan SMS</a>
+		<nav>
+			<a href="#">Naslovnica</a>
+			<a href="#section-uvjeti">Uvjeti korištenja</a>
+			<a href="#">Registracija</a>
+		</nav>
+	</div>
+</header>
+<section>
+	<div id="section-inner">
+		<div id="section-posalji-poruku">
+			<div class="section-naslov">Pošalji besplatnu poruku</div>
+			<form id="section-form" method="POST" action="">
+				<input type="text" placeholder="Primateljev broj..." name="broj" id="input-broj" required/>
+				<textarea placeholder="Poruka korisniku..." id="poruka" maxlenght="145" onkeydown="textCounter(this);" required></textarea>
+				<span>Molimo potpišite se // Preostalo znakova <span id="preostalo-znakova">145</span></span>
+				<input type="submit" value="POŠALJI PORUKU" id="submit-poruka"/>
+			</form>
+		</div><!--Kraj DIV-a sa formom-->
+	</div>
+		<div id="section-uvjeti">
+		<div id="section-uvjeti-inner">
+			<div class="section-naslov">Uvjeti kotištenja</div>
+			<div id="section-uvjeti-text">
+      <p><b>UVJETI KORIŠTENJA</b></p>
+<br />
+<p>Dobrodošli na stranice servisa za besplatno slanje SMS poruka. Posalji.eu omogućuje vam korištenje SMS usluge koje je podložno niže navedenim Uvjetima korištenja.</p>
+
+<br />
+<p><b>Uvjeti korištenja</b></p>
+
+<p>1.1. Korisnik koristi SMS uslugu isključivo na svoj rizik. Posalji.eu ne daje nikakve garancije i ne preuzima nikakvu odgovornost za štete koje korisnik pretrpi korištenjem SMS usluge.</p>
+
+<p>1.2. Posalji.eu SMS usluge naslanja se na Internet kao internacionalnu računalnu mrežu koju Posalji.eu direktno ne kontrolira već je na nju samo vezan te zbog toga ne može garantirati dostupnost servisa koje direktno ne kontrolira.</p>
+
+<p>1.3. Posalji.eu SMS usluga omogućava slanje SMS poruka, pri čemu se jedna SMS poruka može istovremeno poslati na jednog primatelja.</p>
+
+<p>1.4. Posalji.eu SMS usluga dostupna je svim korisnicima, tj. korisnicima koji posjete web stranicu www.posalji.eu.</p>
+
+<p>1.5. Usluga Posalji.eu SMS nije namijenjena za slanje promotivnih SMS poruka, tj. poruka koje se mogu tretirati kao neželjene poruke, stoga će se svako slanje istih smatrati zlouporabom ove Usluge u kojem slučaju Posalji.eu zadržava pravo onemoguciti korisniku daljnje korištenje iste.</p>
+
+<p>1.6. Posalji.eu neće snositi odgovornost u slučaju da pojedine SMS poruka poslane putem Posalji.eu SMS usluge ne stignu primatelju i/ili stignu kasnije od očekivanog neovisno o razlogu istog.</p>
+
+<p>1.7. Posalji.eu zadržava pravo nadogradnje SMS usluge s ciljem poboljšanja iste te dodavanja novih funkcionalnosti. Posalji.eu ne garantira da će sve funkcionalnosti SMS usluge izvršenim poboljšanjima biti dostupne.</p>
+
+<p>1.8. Posalji.eu zadržava pravo izmjene ovih Uvjeta korištenja, o čemu će korisnici biti obaviješteni putem web stranice www.posalji.eu ili na drugi prikladan način.</p>
+
+<br />
+<p><b>Privatnost</b></p>
+
+<p>Korištenjem sadržaja ove web stranice korisnik prihvaća sve rizike koji nastaju iz korištenja ove web stranice te prihvaća koristiti sadržaj ove web stranice isključivo za osobnu uporabu i na vlastitu odgovornost.</p>
+
+<p>Posalji.eu servis poštuje privatnost svojih korisnika i posjetitelja. Podatke iz registracije, te ostale podatke o korisniku, Posalji.eu neće davati na uvid trećoj strani. Podaci o korisniku neće biti dostupni trećoj strani osim u slučaju kada je takva obaveza regulirana zakonom.</p>
+
+<p>Posalji.eu može u skladu sa zakonom prikupljati određene podatke o korisnicima dobivene tijekom korištenja SMS usluge. Ove podatke SMSaj.com.hr koristi kako bi imao informacije kojima bi poboljšao uslugu i njegove sadržaje dodatno usmjerio i prilagodio publici koja ga posjećuje.</p>
+
+<br />
+<p><b>Autorska prava</b></p>
+
+<p>SMSaj.com.hr u nastavku korisnik koda Posalji.eu polaže autorska prava na sve vlastite sadržaje (tekstualne, vizualne i audio materijale, baze podataka i programerski kod). Neovlašteno korištenje bilo kojeg dijela portala, bez dozvole vlasnika autorskih prava, smatra se kršenjem autorskih prava SMSaj.com.hr servisa i podložno je tužbi.</p>
+
+<br />
+<p><b>Izmjene uvjeta korištenja</b></p>
+
+<p>Servis Posalji.eu zadržava pravo izmjene ovih uvjeta koristenja u bilo kojem trenutku te neće biti odgovoran za moguće posljedice proizašle iz takvih promjena.</p>
+
+<br />
+<p><b>Zadnja izmjena:</b><br />ponedjeljak, 10. veljače 2014. u 19:34</p>
+			</div>
+			</div>
+		</div>
+			<div id="section-contact">
+				<div id="section-contact-inner">
+					<p>Imaš pitanje, konstruktivnu sugestiju ili kritiku ? Slobodno nas kontaktiraj</p>
+					<a href="#">Kontaktiraj nas</a>
+				</div>
+			</div>
+</section>
+<footer>
+	<div id="footer-inner">
+		<div id="footer-inner-social">
+			<a href="www.facebook.com" id="facebook"></a>
+			<a href="www.instagram.com" id="instagram"></a>
+			<a href="www.plus.google.com" id="googleplus"></a>
+		</div>
+		<p>© 2014 Posalji.eu. Sva prava pridržana.</p>
+	</div>
+</footer>
+<script src="js/skrol-config.js"></script>
+<script src="js/template.js"></script>	
+    <div>
+		Developed: <a href="http://www.posalji.eu">Posalji.eu</a>
+	</div>
+<?php include_once("analyticstracking.php") ?>
+</body>
+
+</html>
